@@ -36,6 +36,8 @@ Bootstrap’s grid system uses a series of containers, rows, and columns to layo
 
 ### Responsiveness
 
+Bootstrap is mobile-first and uses breakpoints to change layout at specific device sizes
+
 - Components: All Bootstrap components are responsive out of the box.
 - Utility classes: Can be changed in specific break points based on view port size.
 - Typography: Typography will scale up or down based on the device size.

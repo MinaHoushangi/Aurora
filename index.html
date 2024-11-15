@@ -26,5 +26,39 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Bootstrap Nav Bar  -->
+    <!-- Making background dark using 'bg-dark' class  -->
+    <!-- Add data-bs-theme="dark" to the .navbar to enable a component-specific color mode -->
+    <!-- Nav bar should be expended from small break point and onwards -->
+    <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+      <!-- Using container to add a have a content with max-width -->
+      <div class="container">
+        <!-- Making text uppercase using 'text-uppercase' class-->
+        <a class="navbar-brand text-uppercase" href="#">auroraTours</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Push the component to the end using 'ms-auto' class -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
