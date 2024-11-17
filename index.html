@@ -25,9 +25,10 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Bootstrap Nav Bar  -->
+    <!-- 1 Bootstrap Nav Bar  -->
     <!-- Making background dark using 'bg-dark' class  -->
     <!-- Add data-bs-theme="dark" to the .navbar to enable a component-specific color mode -->
     <!-- Nav bar should be expended from small break point and onwards -->
@@ -60,5 +61,121 @@
         </div>
       </div>
     </nav>
+
+    <!-- 2 In Bootstrap main parts of the website usually place in the main tag  -->
+    <main>
+      <!-- Carousel to show slides -->
+      <!-- id is used to add actions -->
+      <!-- class 'ride' is for slides auto play by default on hover it will be paused -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <!-- Carousel indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <!-- Carousel doesn't restrict slides height by default so here I use my custom CSS class -->
+          <div class="carousel-item active my-carousel-height">
+            <!-- slide image -->
+            <img
+              src="images/aurora.webp"
+              class="d-block w-100 my-carousel-img"
+              alt="The Aurora"
+            />
+            <!-- 'top-0' class to make absolute position to the top -->
+            <!-- 'pt-1' class to add padding to the top -->
+            <div class="carousel-caption top-0 pt-4">
+              <!-- 'mt-sm-5' to add margin to the top in small breakpoint -->
+              <p class="text-uppercase mt-sm-5">discover the hidden world</p>
+              <!-- 'display-5' to make text bolder and bigger -->
+              <!-- 'fw-bolder' to make text bold -->
+              <h1 class="display-5 text-capitalize fw-bolder">
+                the aurora tour
+              </h1>
+              <!-- Using Bootstrap 'btn' class with primary theme -->
+              <!-- 'fs-5' to change the font size -->
+              <button class="btn btn-primary fs-5 px-4 mt-sm-5">
+                Book a tour
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item my-carousel-height">
+            <img
+              src="images/hotel.webp"
+              class="d-block w-100 my-carousel-img"
+              alt="The Aurora"
+            />
+            <div class="carousel-caption top-0 pt-4">
+              <p class="text-uppercase mt-sm-5">the season has arrived</p>
+              <h1 class="display-5 text-capitalize fw-bolder">
+                three available tours
+              </h1>
+              <button class="btn btn-primary fs-5 px-4 mt-sm-5">
+                Book a tour
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item my-carousel-height">
+            <img
+              src="images/sleddog-husky-village.jpg"
+              class="d-block w-100 my-carousel-img"
+              alt="The Aurora"
+            />
+            <div class="carousel-caption top-0 pt-4">
+              <p class="text-uppercase mt-sm-5">destination activities</p>
+              <h1 class="display-5 fw-bolder">go glacier hiking</h1>
+              <button class="btn btn-primary fs-5 px-4 mt-sm-5">
+                Book a tour
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Previous and next buttons of the carousel -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+
+    <!-- 3 Website footer -->
+    <footer></footer>
   </body>
 </html>

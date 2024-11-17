@@ -1,0 +1,9 @@
+.my-carousel-height {
+  max-height: 540px;
+}
+
+/* To make slide images darker and cover the container */
+.my-carousel-img {
+  object-fit: cover;
+  filter: brightness(0.4);
+}
