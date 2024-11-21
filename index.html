@@ -64,10 +64,75 @@
 
     <!-- 2 In Bootstrap main parts of the website usually place in the main tag  -->
     <main>
+      <!-- Modal component with a 'fade' animation -->
+      <!-- It is toggling by button click -->
+      <section id="formModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Book a tour</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <!-- Bootstrap grid system -->
+                 <!-- Gutter classes are available across all breakpoints,
+                   with all the same sizes as our margin and padding spacing.
+                   Change horizontal gutters with .gx-* classes, vertical gutters with .gy-*,
+                   or all gutters with .g-* classes. 
+                  .g-0 is also available to remove gutters -->
+                <div class="row g-2">
+                  <div class="col-sm-6">
+                    <!-- Add an input with floating label -->
+                    <div class="form-floating">
+                      <input
+                        id="inputEmail"
+                        type="email"
+                        class="form-control"
+                        placeholder="Your email"
+                      />
+                      <label for="inputEmail">Email address</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- Add a selector with floating label -->
+                    <div class="form-floating">
+                      <select id="inputTour" class="form-select">
+                        <option value="1">Tromso, Norway - $899</option>
+                        <option value="2">Reykjavik, Iceland - $799</option>
+                        <option value="3">Yukon, Canada - $849</option>
+                      </select>
+                      <label for="inputTour">Pick a tour</label>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" class="btn btn-primary">Checkout</button>
+            </div>
+          </form>
+
+          </div>
+        </div>
+      </section>
+
       <!-- Carousel to show slides -->
       <!-- id is used to add actions -->
       <!-- class 'ride' is for slides auto play by default on hover it will be paused -->
-      <div
+      <section
         id="carouselExampleCaptions"
         class="carousel slide"
         data-bs-ride="carousel"
@@ -117,7 +182,12 @@
               </h1>
               <!-- Using Bootstrap 'btn' class with primary theme -->
               <!-- 'fs-5' to change the font size -->
-              <button class="btn btn-primary fs-5 px-4 mt-sm-5">
+              <!-- Toggling modal component on click -->
+              <button
+                class="btn btn-primary fs-5 px-4 mt-sm-5"
+                data-bs-toggle="modal"
+                data-bs-target="#formModal"
+              >
                 Book a tour
               </button>
             </div>
@@ -133,7 +203,11 @@
               <h1 class="display-5 text-capitalize fw-bolder">
                 three available tours
               </h1>
-              <button class="btn btn-primary fs-5 px-4 mt-sm-5">
+              <button
+                class="btn btn-primary fs-5 px-4 mt-sm-5"
+                data-bs-toggle="modal"
+                data-bs-target="#formModal"
+              >
                 Book a tour
               </button>
             </div>
@@ -147,7 +221,11 @@
             <div class="carousel-caption top-0 pt-4">
               <p class="text-uppercase mt-sm-5">destination activities</p>
               <h1 class="display-5 fw-bolder">go glacier hiking</h1>
-              <button class="btn btn-primary fs-5 px-4 mt-sm-5">
+              <button
+                class="btn btn-primary fs-5 px-4 mt-sm-5"
+                data-bs-toggle="modal"
+                data-bs-target="#formModal"
+              >
                 Book a tour
               </button>
             </div>
@@ -172,7 +250,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </section>
     </main>
 
     <!-- 3 Website footer -->
