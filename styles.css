@@ -7,3 +7,8 @@
   object-fit: cover;
   filter: brightness(0.4);
 }
+
+.my-review {
+  height: 180px;
+  background-color: #cfcfcf;
+}

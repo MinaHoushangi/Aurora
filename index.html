@@ -26,6 +26,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Add CDN of Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <!-- 1 Bootstrap Nav Bar  -->
@@ -78,10 +83,10 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
-              <form action="#">
+            <form action="#">
+              <div class="modal-body">
                 <!-- Bootstrap grid system -->
-                 <!-- Gutter classes are available across all breakpoints,
+                <!-- Gutter classes are available across all breakpoints,
                    with all the same sizes as our margin and padding spacing.
                    Change horizontal gutters with .gx-* classes, vertical gutters with .gy-*,
                    or all gutters with .g-* classes. 
@@ -111,20 +116,19 @@
                     </div>
                   </div>
                 </div>
-            </div>
+              </div>
 
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="submit" class="btn btn-primary">Checkout</button>
-            </div>
-          </form>
-
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="submit" class="btn btn-primary">Checkout</button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -250,6 +254,36 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+      </section>
+
+      <!-- Review section with custom class -->
+      <section class="my-review">
+        <!-- Using 'container' to add padding -->
+        <!-- Using 'd-flex' to make display flex and use flexbox and using justify-content and align-items -->
+        <!-- Bootstrap 'h-100' to get the entire height of container -->
+        <div
+          class="container d-flex h-100 align-items-center justify-content-center"
+        >
+          <!-- Using grid system -->
+          <!-- Bootstrap 'w-100' to get entire width -->
+          <!-- Bootstrap 'text-center' to make text center -->
+          <div class="row text-center w-100">
+            <div class="col-md">
+              <!-- Use Bootstrap icon classes -->
+              <!-- Bootstrap 'me-2' to add margin to the end -->
+              <i class="bi bi-airplane-fill me-2"></i>
+              3 amazing destination
+            </div>
+            <div class="col-md">
+              <i class="bi bi-wallet-fill me-2"></i>
+              only pay 5% up front
+            </div>
+            <div class="col-md">
+              <i class="bi bi-patch-check-fill me-2"></i>
+              1000's of customers
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
